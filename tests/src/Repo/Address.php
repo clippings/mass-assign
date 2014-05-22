@@ -2,7 +2,8 @@
 
 namespace CL\MassAssign\Test\Repo;
 
-use CL\MassAssign\Test\Rel;
+use CL\LunaJsonStore\AbstractJsonRepo;
+use CL\LunaJsonStore\Rel;
 use CL\Carpo\Assert;
 
 /**
@@ -10,7 +11,7 @@ use CL\Carpo\Assert;
  * @copyright  (c) 2014 Clippings Ltd.
  * @license    http://www.opensource.org/licenses/isc-license.txt
  */
-class Address extends AbstractTestRepo {
+class Address extends AbstractJsonRepo {
 
     private static $instance;
 
@@ -20,7 +21,7 @@ class Address extends AbstractTestRepo {
     public static function get()
     {
         if (! self::$instance) {
-            self::$instance = new Address('CL\MassAssign\Test\Model\Address');
+            self::$instance = new Address('CL\MassAssign\Test\Model\Address', TEST_DIR.'/Address.json');
         }
 
         return self::$instance;

@@ -20,6 +20,14 @@ class AssignModel
         $this->model = $model;
     }
 
+    /**
+     * @return AbstractModel
+     */
+    public function getModel()
+    {
+        return $this->model;
+    }
+
     public function execute(UnsafeData $data)
     {
         $properties = $data->getPropertiesData($this->model);

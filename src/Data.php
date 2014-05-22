@@ -24,6 +24,11 @@ class Data extends UnsafeData
         $this->permitted = Arr::toAssoc($permitted);
     }
 
+    public function getPermitted()
+    {
+        return $this->permitted;
+    }
+
     public function getPropertiesData(AbstractModel $node)
     {
         $rels = $node->getRepo()->getRels()->all();

@@ -11,11 +11,22 @@ use CL\LunaCore\Repo\LinkOne;
  */
 class AssignLinkOne extends AbstractAssignLink
 {
+    /**
+     * @var LinkOne
+     */
     private $link;
 
     public function __construct(LinkOne $link)
     {
         $this->link = $link;
+    }
+
+    /**
+     * @return LinkOne
+     */
+    public function getLink()
+    {
+        return $this->link;
     }
 
     public function execute(UnsafeData $data)

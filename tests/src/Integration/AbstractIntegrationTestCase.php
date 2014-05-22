@@ -35,13 +35,15 @@ abstract class AbstractIntegrationTestCase extends AbstractTestCase
                         "id": 1,
                         "name": "post 1",
                         "body": "my post 1",
-                        "userId": 1
+                        "userId": 1,
+                        "class": "CL\\\\MassAssign\\\\Test\\\\Model\\\\Post"
                     },
                     "2": {
                         "id": 2,
                         "name": "post 2",
                         "body": "my post 2",
-                        "userId": 1
+                        "userId": 1,
+                        "class": "CL\\\\MassAssign\\\\Test\\\\Model\\\\Post"
                     }
                 }',
                 'User.json' => '{

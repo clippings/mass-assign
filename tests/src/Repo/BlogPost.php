@@ -17,7 +17,7 @@ class BlogPost extends Post {
     public static function get()
     {
         if (! self::$instance) {
-            self::$instance = new BlogPost('CL\MassAssign\Test\Model\BlogPost');
+            self::$instance = new BlogPost('CL\MassAssign\Test\Model\BlogPost', TEST_DIR.'/Post.json');
         }
 
         return self::$instance;

@@ -11,6 +11,9 @@ use CL\LunaCore\Repo\LinkMany;
  */
 class AssignLinkMany extends AbstractAssignLink
 {
+    /**
+     * @var LinkMany
+     */
     private $link;
 
     public function __construct(LinkMany $link)
@@ -18,11 +21,20 @@ class AssignLinkMany extends AbstractAssignLink
         $this->link = $link;
     }
 
+    /**
+     * @return LinkMany
+     */
+    public function getLink()
+    {
+        return $this->link;
+    }
+
     public function execute(UnsafeData $data)
     {
         $this->link->clear();
 
         foreach ($data->getArray() as $itemData) {
+
 
             $model = $this->getModel($this->link->getRel(), $itemData);
 

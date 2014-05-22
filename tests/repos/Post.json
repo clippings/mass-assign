@@ -16,5 +16,12 @@
         "name": "new title",
         "body": "new body",
         "userId": 1
+    },
+    "4": {
+        "url": "http:\/\/example.com",
+        "id": 4,
+        "name": "blog title",
+        "body": "blog body",
+        "userId": 1
     }
 }

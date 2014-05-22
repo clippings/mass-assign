@@ -42,7 +42,7 @@ class DataTest extends AbstractIntegrationTestCase {
 
         $data->assignTo($user);
 
-        Repo\User::get()->persist($user);
+        Repo\User::get()->save($user);
 
         // $this->assertEquals(
         //     [
