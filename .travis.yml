@@ -1,10 +1,14 @@
 language: php
 
 php:
-  - 5.3
   - 5.4
   - 5.5
   - hhvm
+
+notifications:
+  email: false
+  slack:
+    secure: Gljn/4LaCCu+nUZjroQqEkE1dr9mdbP4Ff7zeG0eEY5m1Lx7dBLSdfE6FwHgCRvbQrO9UxfOetl82x410DefbhhPmRBD4MkKg+HWvMfaRUP01sQDrA9jCZSNbA467v2WgorLNEad8oawJAvHVpyZeEtBaw3BvfeQu8a7ckikgyA=
 
 before_install:
   - composer selfupdate
