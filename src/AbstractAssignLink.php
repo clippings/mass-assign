@@ -11,17 +11,9 @@ use CL\LunaCore\Rel\AbstractRel;
  */
 abstract class AbstractAssignLink
 {
-    public function getModel(AbstractRel $rel, UnsafeData $data)
-    {
-        $repo =$this->getRepo($rel, $data);
-
-        if ($data->getId() !== null) {
-            return $repo->find($data->getId());
-        } else {
-            return $repo->newInstance();
-        }
-    }
-
+    /**
+     * @return \CL\LunaCore\Save\AbstractSaveRepo
+     */
     public function getRepo(AbstractRel $rel, UnsafeData $data)
     {
         $repo = $data->getRepo();
@@ -30,6 +22,20 @@ abstract class AbstractAssignLink
             return $repo;
         } else {
             return $rel->getForeignRepo();
+        }
+    }
+
+    /**
+     * @return \CL\LunaCore\Model\AbstractModel
+     */
+    public function getModel(AbstractRel $rel, UnsafeData $data)
+    {
+        $repo = $this->getRepo($rel, $data);
+
+        if ($data->getId() !== null) {
+            return $repo->find($data->getId());
+        } else {
+            return $repo->newInstance();
         }
     }
 }
