@@ -69,6 +69,6 @@ abstract class AbstractIntegrationTestCase extends AbstractTestCase
 
     public function tearDown()
     {
-        // $this->env->restore();
+        $this->env->restore();
     }
 }
