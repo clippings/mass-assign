@@ -3,6 +3,8 @@
 namespace CL\MassAssign;
 
 use CL\LunaCore\Model\AbstractModel;
+use CL\LunaCore\Save\AbstractSaveRepo;
+use InvalidArgumentException;
 
 /*
  * @author     Ivan Kerin
@@ -11,10 +13,24 @@ use CL\LunaCore\Model\AbstractModel;
  */
 class UnsafeData
 {
+    /**
+     * @var array
+     */
     protected $data;
+
+    /**
+     * @var mixed
+     */
     protected $id;
+
+    /**
+     * @var AbstractSaveRepo
+     */
     protected $repo;
 
+    /**
+     * @return array
+     */
     public function all()
     {
         return $this->data;
@@ -35,10 +51,14 @@ class UnsafeData
         $this->data = $data;
     }
 
+    /**
+     * @param string $repoClass
+     * @return UnsafeData $this
+     */
     public function setRepoClass($repoClass)
     {
-        if (! is_subclass_of($repoClass, 'CL\LunaCore\Repo\AbstractRepo')) {
-            throw new InvalidArgumentException('_repo must be a AbstractRepo class');
+        if (! is_subclass_of($repoClass, 'CL\LunaCore\Save\AbstractSaveRepo')) {
+            throw new InvalidArgumentException('_repo must be a AbstractSaveRepo class');
         }
 
         $this->repo = $repoClass::get();
@@ -46,34 +66,52 @@ class UnsafeData
         return $this;
     }
 
+    /**
+     * @return AbstractSaveRepo
+     */
     public function getRepo()
     {
         return $this->repo;
     }
 
+    /**
+     * @return mixed
+     */
     public function getId()
     {
         return $this->id;
     }
 
-    public function assignTo(AbstractModel $node)
+    /**
+     * @param  AbstractModel $model
+     * @return UnsafeData $this
+     */
+    public function assignTo(AbstractModel $model)
     {
-        $assign = new AssignModel($node);
+        $assign = new AssignModel($model);
         $assign->execute($this);
 
         return $this;
     }
 
-    public function getPropertiesData(AbstractModel $node)
+    /**
+     * @param  AbstractModel $model
+     * @return array
+     */
+    public function getPropertiesData(AbstractModel $model)
     {
-        $rels = $node->getRepo()->getRels()->all();
+        $rels = $model->getRepo()->getRels()->all();
 
         return array_diff_key($this->data, $rels);
     }
 
-    public function getRelData(AbstractModel $node)
+    /**
+     * @param  AbstractModel $model
+     * @return array
+     */
+    public function getRelData(AbstractModel $model)
     {
-        $rels = $node->getRepo()->getRels()->all();
+        $rels = $model->getRepo()->getRels()->all();
 
         $relData = array_intersect_key($this->data, $rels);
 
@@ -84,6 +122,9 @@ class UnsafeData
         return $relData;
     }
 
+    /**
+     * @return UnsafeData[]
+     */
     public function getArray()
     {
         return array_map(function ($data) {
