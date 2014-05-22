@@ -39,12 +39,10 @@ class AssignModel
             $link = $this->model->getRepo()->loadLink($this->model, $relName);
 
             if ($link instanceof LinkOne) {
-                $assign = new AssignLinkOne($link);
+                (new AssignLinkOne($link))->execute($relData);
             } elseif ($link instanceof LinkMany) {
-                $assign = new AssignLinkMany($link);
+                (new AssignLinkMany($link))->execute($relData);
             }
-
-            $assign->execute($relData);
         }
     }
 }

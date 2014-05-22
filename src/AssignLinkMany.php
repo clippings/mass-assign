@@ -35,7 +35,6 @@ class AssignLinkMany extends AbstractAssignLink
 
         foreach ($data->getArray() as $itemData) {
 
-
             $model = $this->getModel($this->link->getRel(), $itemData);
 
             $this->link->add($model);

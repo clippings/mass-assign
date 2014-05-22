@@ -52,7 +52,7 @@ class UnsafeData
     }
 
     /**
-     * @param string $repoClass
+     * @param  string     $repoClass
      * @return UnsafeData $this
      */
     public function setRepoClass($repoClass)
@@ -84,7 +84,7 @@ class UnsafeData
 
     /**
      * @param  AbstractModel $model
-     * @return UnsafeData $this
+     * @return UnsafeData    $this
      */
     public function assignTo(AbstractModel $model)
     {

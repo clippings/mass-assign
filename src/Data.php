@@ -4,9 +4,6 @@ namespace CL\MassAssign;
 
 use CL\Util\Arr;
 use CL\LunaCore\Model\AbstractModel;
-use CL\LunaCore\Repo\AbstractLink;
-use CL\LunaCore\Repo\LinkOne;
-use CL\LunaCore\Repo\LinkMany;
 
 /*
  * @author     Ivan Kerin
