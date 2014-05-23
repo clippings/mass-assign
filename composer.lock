@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9b73dc246c6ba36fff35a3ada4d1a236",
+    "hash": "44ed6fdbd100879a5ef9484d06dc458c",
     "packages": [
         {
             "name": "clippings/carpo",
@@ -46,12 +46,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/clippings/luna-core.git",
-                "reference": "9a9d0526a42aac0bcc0c8df02b192b79d1833034"
+                "reference": "d8a2126283e889836d9b5d66701c0f60b9404431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clippings/luna-core/zipball/9a9d0526a42aac0bcc0c8df02b192b79d1833034",
-                "reference": "9a9d0526a42aac0bcc0c8df02b192b79d1833034",
+                "url": "https://api.github.com/repos/clippings/luna-core/zipball/d8a2126283e889836d9b5d66701c0f60b9404431",
+                "reference": "d8a2126283e889836d9b5d66701c0f60b9404431",
                 "shasum": ""
             },
             "require": {
@@ -83,7 +83,7 @@
                 "source": "https://github.com/clippings/luna-core/tree/master",
                 "issues": "https://github.com/clippings/luna-core/issues"
             },
-            "time": "2014-05-21 15:52:40"
+            "time": "2014-05-23 14:05:15"
         },
         {
             "name": "clippings/util",
@@ -201,12 +201,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/clippings/luna-json-store.git",
-                "reference": "8a0ab623534e1e0dee3daa41749b1ff3606de8fd"
+                "reference": "3ee9c6147857b9ccb326557959ac1e689dc32ef7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clippings/luna-json-store/zipball/8a0ab623534e1e0dee3daa41749b1ff3606de8fd",
-                "reference": "8a0ab623534e1e0dee3daa41749b1ff3606de8fd",
+                "url": "https://api.github.com/repos/clippings/luna-json-store/zipball/3ee9c6147857b9ccb326557959ac1e689dc32ef7",
+                "reference": "3ee9c6147857b9ccb326557959ac1e689dc32ef7",
                 "shasum": ""
             },
             "require": {
@@ -224,7 +224,6 @@
                     "CL\\LunaJsonStore\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -232,12 +231,15 @@
                 {
                     "name": "Ivan Kerin",
                     "email": "ikerin@gmail.com",
-                    "homepage": "http://www.openbuildings.com",
                     "role": "Author"
                 }
             ],
             "description": "Persistence layer for Luna, based on JSON files",
-            "time": "2014-05-22 08:45:19"
+            "support": {
+                "source": "https://github.com/clippings/luna-json-store/tree/master",
+                "issues": "https://github.com/clippings/luna-json-store/issues"
+            },
+            "time": "2014-05-23 15:03:35"
         }
     ],
     "aliases": [

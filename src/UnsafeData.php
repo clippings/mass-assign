@@ -100,7 +100,7 @@ class UnsafeData
      */
     public function getPropertiesData(AbstractModel $model)
     {
-        $rels = $model->getRepo()->getRels()->all();
+        $rels = $model->getRepo()->getRels();
 
         return array_diff_key($this->data, $rels);
     }
@@ -111,7 +111,7 @@ class UnsafeData
      */
     public function getRelData(AbstractModel $model)
     {
-        $rels = $model->getRepo()->getRels()->all();
+        $rels = $model->getRepo()->getRels();
 
         $relData = array_intersect_key($this->data, $rels);
 

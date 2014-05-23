@@ -35,7 +35,7 @@ abstract class AbstractAssignLink
         if ($data->getId() !== null) {
             return $repo->find($data->getId());
         } else {
-            return $repo->newInstance();
+            return $repo->newModel();
         }
     }
 }

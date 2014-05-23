@@ -28,7 +28,7 @@ class Data extends UnsafeData
 
     public function getPropertiesData(AbstractModel $node)
     {
-        $rels = $node->getRepo()->getRels()->all();
+        $rels = $node->getRepo()->getRels();
 
         $data = array_intersect_key($this->data, $this->permitted);
 
@@ -37,7 +37,7 @@ class Data extends UnsafeData
 
     public function getRelData(AbstractModel $node)
     {
-        $rels = $node->getRepo()->getRels()->all();
+        $rels = $node->getRepo()->getRels();
 
         $relData = array_intersect_key($this->data, $rels);
 
