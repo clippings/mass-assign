@@ -1,9 +1,9 @@
 <?php
 
-namespace CL\MassAssign\Test\Model;
+namespace Harp\MassAssign\Test\Model;
 
-use CL\LunaCore\Model\AbstractModel;
-use CL\MassAssign\Test\Repo;
+use Harp\Core\Model\AbstractModel;
+use Harp\MassAssign\Test\Repo;
 
 /**
  * @author     Ivan Kerin

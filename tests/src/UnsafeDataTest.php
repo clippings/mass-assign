@@ -1,22 +1,23 @@
 <?php
 
-namespace CL\MassAssign\Test;
+namespace Harp\MassAssign\Test;
 
-use CL\MassAssign\UnsafeData;
+use Harp\MassAssign\UnsafeData;
 
-/*
+/**
  * @author     Ivan Kerin
  * @copyright  (c) 2014 Clippings Ltd.
  * @license    http://www.opensource.org/licenses/isc-license.txt
+ * @coversDefaultClass Harp\MassAssign\UnsafeData
  */
 class UnsafeDataTest extends AbstractTestCase
 {
     /**
-     * @covers CL\MassAssign\UnsafeData::__construct
-     * @covers CL\MassAssign\UnsafeData::all
-     * @covers CL\MassAssign\UnsafeData::getId
-     * @covers CL\MassAssign\UnsafeData::getRepo
-     * @covers CL\MassAssign\UnsafeData::setRepoClass
+     * @covers ::__construct
+     * @covers ::all
+     * @covers ::getId
+     * @covers ::getRepo
+     * @covers ::setRepoClass
      */
     public function testConstruct()
     {
@@ -34,8 +35,8 @@ class UnsafeDataTest extends AbstractTestCase
     }
 
     /**
-     * @covers CL\MassAssign\UnsafeData::__construct
-     * @covers CL\MassAssign\UnsafeData::setRepoClass
+     * @covers ::__construct
+     * @covers ::setRepoClass
      * @expectedException InvalidArgumentException
      */
     public function testConstructWithInvalidRepo()
@@ -44,7 +45,7 @@ class UnsafeDataTest extends AbstractTestCase
     }
 
     /**
-     * @covers CL\MassAssign\UnsafeData::assignTo
+     * @covers ::assignTo
      */
     public function testAssignTo()
     {
@@ -69,8 +70,8 @@ class UnsafeDataTest extends AbstractTestCase
     }
 
     /**
-     * @covers CL\MassAssign\UnsafeData::getPropertiesData
-     * @covers CL\MassAssign\UnsafeData::getRelData
+     * @covers ::getPropertiesData
+     * @covers ::getRelData
      */
     public function testData()
     {
@@ -103,7 +104,7 @@ class UnsafeDataTest extends AbstractTestCase
     }
 
     /**
-     * @covers CL\MassAssign\UnsafeData::getArray
+     * @covers ::getArray
      */
     public function testGetArray()
     {

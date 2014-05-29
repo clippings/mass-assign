@@ -1,26 +1,27 @@
 <?php
 
-namespace CL\MassAssign\Test;
+namespace Harp\MassAssign\Test;
 
-use CL\MassAssign\AbstractAssignLink;
-use CL\MassAssign\UnsafeData;
-use CL\MassAssign\Test\Integration\AbstractIntegrationTestCase;
+use Harp\MassAssign\AbstractAssignLink;
+use Harp\MassAssign\UnsafeData;
+use Harp\MassAssign\Test\Integration\AbstractIntegrationTestCase;
 
-/*
+/**
  * @author     Ivan Kerin
  * @copyright  (c) 2014 Clippings Ltd.
  * @license    http://www.opensource.org/licenses/isc-license.txt
+ * @coversDefaultClass Harp\MassAssign\AbstractAssignLink
  */
 class AbstractAssignLinkTest extends AbstractIntegrationTestCase
 {
     /**
-     * @covers CL\MassAssign\AbstractAssignLink::getRepo
+     * @covers ::getRepo
      */
     public function testGetRepo()
     {
         $rel = Repo\User::get()->getRel('address');
 
-        $assign = $this->getMockForAbstractClass('CL\MassAssign\AbstractAssignLink');
+        $assign = $this->getMockForAbstractClass('Harp\MassAssign\AbstractAssignLink');
 
         $data = new UnsafeData([]);
 
@@ -36,13 +37,13 @@ class AbstractAssignLinkTest extends AbstractIntegrationTestCase
     }
 
     /**
-     * @covers CL\MassAssign\AbstractAssignLink::getModel
+     * @covers ::getModel
      */
     public function testGetModel()
     {
         $rel = Repo\User::get()->getRel('address');
 
-        $assign = $this->getMockForAbstractClass('CL\MassAssign\AbstractAssignLink');
+        $assign = $this->getMockForAbstractClass('Harp\MassAssign\AbstractAssignLink');
 
         $data = new UnsafeData([]);
 

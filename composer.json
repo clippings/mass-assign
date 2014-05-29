@@ -1,5 +1,5 @@
 {
-    "name": "clippings/mass-assign",
+    "name": "harp-orm/mass-assign",
     "description": "Luna extension to allow safe mass assignment of models",
     "license": "BSD-3-Clause",
     "authors": [
@@ -12,25 +12,25 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/clippings/luna-core"
+            "url": "https://github.com/harp-orm/core"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/clippings/luna-json-store"
+            "url": "https://github.com/harp-orm/json-store"
         }
     ],
     "require": {
         "php": ">=5.4.0",
         "psr/log": "~1.0",
-        "clippings/luna-core": "dev-master",
-        "clippings/util": "dev-master",
-        "clippings/carpo": "dev-master"
+        "harp-orm/core": "dev-master",
+        "harp-orm/validate": "dev-master",
+        "clippings/util": "dev-master"
     },
     "require-dev": {
         "clippings/env-backup": "~0.2.5",
-        "clippings/luna-json-store": "dev-master"
+        "harp-orm/json-store": "dev-master"
     },
     "autoload": {
-        "psr-4": {"CL\\MassAssign\\": "src/"}
+        "psr-4": {"Harp\\MassAssign\\": "src/"}
     }
 }

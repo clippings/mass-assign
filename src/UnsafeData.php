@@ -1,9 +1,9 @@
 <?php
 
-namespace CL\MassAssign;
+namespace Harp\MassAssign;
 
-use CL\LunaCore\Model\AbstractModel;
-use CL\LunaCore\Save\AbstractSaveRepo;
+use Harp\Core\Model\AbstractModel;
+use Harp\Core\Save\AbstractSaveRepo;
 use InvalidArgumentException;
 
 /*
@@ -57,7 +57,7 @@ class UnsafeData
      */
     public function setRepoClass($repoClass)
     {
-        if (! is_subclass_of($repoClass, 'CL\LunaCore\Save\AbstractSaveRepo')) {
+        if (! is_subclass_of($repoClass, 'Harp\Core\Save\AbstractSaveRepo')) {
             throw new InvalidArgumentException('_repo must be a AbstractSaveRepo class');
         }
 

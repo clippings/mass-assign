@@ -1,21 +1,22 @@
 <?php
 
-namespace CL\MassAssign\Test;
+namespace Harp\MassAssign\Test;
 
-use CL\MassAssign\AssignLinkOne;
-use CL\MassAssign\UnsafeData;
-use CL\LunaCore\Repo\LinkOne;
+use Harp\MassAssign\AssignLinkOne;
+use Harp\MassAssign\UnsafeData;
+use Harp\Core\Repo\LinkOne;
 
-/*
+/**
  * @author     Ivan Kerin
  * @copyright  (c) 2014 Clippings Ltd.
  * @license    http://www.opensource.org/licenses/isc-license.txt
+ * @coversDefaultClass Harp\MassAssign\AssignLinkOne
  */
 class AssignLinkOneTest extends AbstractTestCase
 {
     /**
-     * @covers CL\MassAssign\AssignLinkOne::__construct
-     * @covers CL\MassAssign\AssignLinkOne::getLink
+     * @covers ::__construct
+     * @covers ::getLink
      */
     public function testConstruct()
     {
@@ -30,7 +31,7 @@ class AssignLinkOneTest extends AbstractTestCase
     }
 
     /**
-     * @covers CL\MassAssign\AssignLinkOne::execute
+     * @covers ::execute
      */
     public function testExecute()
     {

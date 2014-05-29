@@ -1,11 +1,11 @@
 <?php
 
-namespace CL\MassAssign\Test\Integration;
+namespace Harp\MassAssign\Test\Integration;
 
 use CL\EnvBackup\Env;
 use CL\EnvBackup\DirectoryParam;
-use CL\MassAssign\Test\Repo;
-use CL\MassAssign\Test\AbstractTestCase;
+use Harp\MassAssign\Test\Repo;
+use Harp\MassAssign\Test\AbstractTestCase;
 
 abstract class AbstractIntegrationTestCase extends AbstractTestCase
 {

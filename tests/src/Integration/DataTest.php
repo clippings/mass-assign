@@ -1,9 +1,9 @@
 <?php
 
-namespace CL\MassAssign\Test\Integration;
+namespace Harp\MassAssign\Test\Integration;
 
-use CL\MassAssign\Data;
-use CL\MassAssign\Test\Repo;
+use Harp\MassAssign\Data;
+use Harp\MassAssign\Test\Repo;
 
 class DataTest extends AbstractIntegrationTestCase {
 
@@ -23,7 +23,7 @@ class DataTest extends AbstractIntegrationTestCase {
                     'body' => 'changed body 2',
                 ],
                 [
-                    '_repo' => 'CL\MassAssign\Test\Repo\BlogPost',
+                    '_repo' => 'Harp\MassAssign\Test\Repo\BlogPost',
                     'name' => 'blog title',
                     'body' => 'blog body',
                     'url' => 'http://example.com',

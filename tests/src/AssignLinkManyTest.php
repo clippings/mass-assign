@@ -1,21 +1,22 @@
 <?php
 
-namespace CL\MassAssign\Test;
+namespace Harp\MassAssign\Test;
 
-use CL\MassAssign\AssignLinkMany;
-use CL\MassAssign\UnsafeData;
-use CL\LunaCore\Repo\LinkMany;
+use Harp\MassAssign\AssignLinkMany;
+use Harp\MassAssign\UnsafeData;
+use Harp\Core\Repo\LinkMany;
 
-/*
+/**
  * @author     Ivan Kerin
  * @copyright  (c) 2014 Clippings Ltd.
  * @license    http://www.opensource.org/licenses/isc-license.txt
+ * @coversDefaultClass Harp\MassAssign\AssignLinkMany
  */
 class AssignLinkManyTest extends AbstractTestCase
 {
     /**
-     * @covers CL\MassAssign\AssignLinkMany::__construct
-     * @covers CL\MassAssign\AssignLinkMany::getLink
+     * @covers ::__construct
+     * @covers ::getLink
      */
     public function testConstruct()
     {
@@ -30,7 +31,7 @@ class AssignLinkManyTest extends AbstractTestCase
     }
 
     /**
-     * @covers CL\MassAssign\AssignLinkMany::execute
+     * @covers ::execute
      */
     public function testExecute()
     {

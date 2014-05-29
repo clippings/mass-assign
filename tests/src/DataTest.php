@@ -1,19 +1,20 @@
 <?php
 
-namespace CL\MassAssign\Test;
+namespace Harp\MassAssign\Test;
 
-use CL\MassAssign\Data;
+use Harp\MassAssign\Data;
 
-/*
+/**
  * @author     Ivan Kerin
  * @copyright  (c) 2014 Clippings Ltd.
  * @license    http://www.opensource.org/licenses/isc-license.txt
+ * @coversDefaultClass Harp\MassAssign\Data
  */
 class DataTest extends AbstractTestCase
 {
     /**
-     * @covers CL\MassAssign\Data::__construct
-     * @covers CL\MassAssign\Data::getPermitted
+     * @covers ::__construct
+     * @covers ::getPermitted
      */
     public function testConstruct()
     {
@@ -36,8 +37,8 @@ class DataTest extends AbstractTestCase
     }
 
     /**
-     * @covers CL\MassAssign\Data::getPropertiesData
-     * @covers CL\MassAssign\Data::getRelData
+     * @covers ::getPropertiesData
+     * @covers ::getRelData
      */
     public function testData()
     {
@@ -74,7 +75,7 @@ class DataTest extends AbstractTestCase
     }
 
     /**
-     * @covers CL\MassAssign\Data::getArray
+     * @covers ::getArray
      */
     public function testGetArray()
     {

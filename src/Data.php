@@ -1,9 +1,9 @@
 <?php
 
-namespace CL\MassAssign;
+namespace Harp\MassAssign;
 
 use CL\Util\Arr;
-use CL\LunaCore\Model\AbstractModel;
+use Harp\Core\Model\AbstractModel;
 
 /*
  * @author     Ivan Kerin

@@ -1,8 +1,8 @@
 <?php
 
-namespace CL\MassAssign;
+namespace Harp\MassAssign;
 
-use CL\LunaCore\Repo\LinkOne;
+use Harp\Core\Repo\LinkOne;
 
 /*
  * @author     Ivan Kerin

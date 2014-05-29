@@ -1,8 +1,8 @@
 <?php
 
-namespace CL\MassAssign;
+namespace Harp\MassAssign;
 
-use CL\LunaCore\Rel\AbstractRel;
+use Harp\Core\Rel\AbstractRel;
 
 /*
  * @author     Ivan Kerin
@@ -12,7 +12,7 @@ use CL\LunaCore\Rel\AbstractRel;
 abstract class AbstractAssignLink
 {
     /**
-     * @return \CL\LunaCore\Save\AbstractSaveRepo
+     * @return \Harp\Core\Save\AbstractSaveRepo
      */
     public function getRepo(AbstractRel $rel, UnsafeData $data)
     {
@@ -26,7 +26,7 @@ abstract class AbstractAssignLink
     }
 
     /**
-     * @return \CL\LunaCore\Model\AbstractModel
+     * @return \Harp\Core\Model\AbstractModel
      */
     public function getModel(AbstractRel $rel, UnsafeData $data)
     {

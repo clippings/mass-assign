@@ -1,8 +1,8 @@
 <?php
 
-namespace CL\MassAssign;
+namespace Harp\MassAssign;
 
-use CL\LunaCore\Repo\LinkMany;
+use Harp\Core\Repo\LinkMany;
 
 /*
  * @author     Ivan Kerin

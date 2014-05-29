@@ -1,6 +1,6 @@
 <?php
 
-namespace CL\MassAssign\Test\Repo;
+namespace Harp\MassAssign\Test\Repo;
 
 /**
  * @author     Ivan Kerin
@@ -17,7 +17,7 @@ class BlogPost extends Post {
     public static function get()
     {
         if (! self::$instance) {
-            self::$instance = new BlogPost('CL\MassAssign\Test\Model\BlogPost', TEST_DIR.'/Post.json');
+            self::$instance = new BlogPost('Harp\MassAssign\Test\Model\BlogPost', TEST_DIR.'/Post.json');
         }
 
         return self::$instance;

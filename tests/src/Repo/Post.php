@@ -1,10 +1,10 @@
 <?php
 
-namespace CL\MassAssign\Test\Repo;
+namespace Harp\MassAssign\Test\Repo;
 
-use CL\LunaJsonStore\AbstractJsonRepo;
-use CL\LunaJsonStore\Rel;
-use CL\Carpo\Assert;
+use Harp\JsonStore\AbstractJsonRepo;
+use Harp\JsonStore\Rel;
+use Harp\Validate\Assert;
 
 /**
  * @author     Ivan Kerin
@@ -21,7 +21,7 @@ class Post extends AbstractJsonRepo {
     public static function get()
     {
         if (! self::$instance) {
-            self::$instance = new Post('CL\MassAssign\Test\Model\Post', TEST_DIR.'/Post.json');
+            self::$instance = new Post('Harp\MassAssign\Test\Model\Post', TEST_DIR.'/Post.json');
         }
 
         return self::$instance;

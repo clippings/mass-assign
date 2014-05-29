@@ -1,6 +1,6 @@
 <?php
 
-namespace CL\MassAssign\Test;
+namespace Harp\MassAssign\Test;
 
 use PHPUnit_Framework_TestCase;
 

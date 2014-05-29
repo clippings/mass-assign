@@ -1,20 +1,21 @@
 <?php
 
-namespace CL\MassAssign\Test;
+namespace Harp\MassAssign\Test;
 
-use CL\MassAssign\AssignModel;
-use CL\MassAssign\UnsafeData;
+use Harp\MassAssign\AssignModel;
+use Harp\MassAssign\UnsafeData;
 
-/*
+/**
  * @author     Ivan Kerin
  * @copyright  (c) 2014 Clippings Ltd.
  * @license    http://www.opensource.org/licenses/isc-license.txt
+ * @coversDefaultClass Harp\MassAssign\AssignModel
  */
 class AssignModelTest extends AbstractTestCase
 {
     /**
-     * @covers CL\MassAssign\AssignModel::__construct
-     * @covers CL\MassAssign\AssignModel::getModel
+     * @covers ::__construct
+     * @covers ::getModel
      */
     public function testConstruct()
     {
@@ -26,7 +27,7 @@ class AssignModelTest extends AbstractTestCase
     }
 
     /**
-     * @covers CL\MassAssign\AssignModel::execute
+     * @covers ::execute
      */
     public function testExecute()
     {
