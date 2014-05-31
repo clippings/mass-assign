@@ -2,7 +2,7 @@
 
 namespace Harp\MassAssign;
 
-use CL\Util\Arr;
+use Harp\Util\Arr;
 use Harp\Core\Model\AbstractModel;
 
 /*
