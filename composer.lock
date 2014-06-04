@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/harp-orm/core.git",
-                "reference": "2fae207accba6613ed44d5c67cb55e2f630d529a"
+                "reference": "3a30b61356938a368e92ab50ed90b95592643771"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harp-orm/core/zipball/2fae207accba6613ed44d5c67cb55e2f630d529a",
-                "reference": "2fae207accba6613ed44d5c67cb55e2f630d529a",
+                "url": "https://api.github.com/repos/harp-orm/core/zipball/3a30b61356938a368e92ab50ed90b95592643771",
+                "reference": "3a30b61356938a368e92ab50ed90b95592643771",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 "source": "https://github.com/harp-orm/core/tree/master",
                 "issues": "https://github.com/harp-orm/core/issues"
             },
-            "time": "2014-06-04 17:27:59"
+            "time": "2014-06-04 20:02:17"
         },
         {
             "name": "harp-orm/util",
@@ -201,12 +201,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/harp-orm/json-store.git",
-                "reference": "e4c87a132b373933783af749add7687ea511c7d3"
+                "reference": "d118636612892753d6c30999861182f5cefb899b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harp-orm/json-store/zipball/e4c87a132b373933783af749add7687ea511c7d3",
-                "reference": "e4c87a132b373933783af749add7687ea511c7d3",
+                "url": "https://api.github.com/repos/harp-orm/json-store/zipball/d118636612892753d6c30999861182f5cefb899b",
+                "reference": "d118636612892753d6c30999861182f5cefb899b",
                 "shasum": ""
             },
             "require": {
@@ -238,7 +238,7 @@
                 "source": "https://github.com/harp-orm/json-store/tree/master",
                 "issues": "https://github.com/harp-orm/json-store/issues"
             },
-            "time": "2014-05-31 11:49:41"
+            "time": "2014-06-04 20:06:35"
         }
     ],
     "aliases": [],

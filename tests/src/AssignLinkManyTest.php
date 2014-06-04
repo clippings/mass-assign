@@ -21,6 +21,7 @@ class AssignLinkManyTest extends AbstractTestCase
     public function testConstruct()
     {
         $link = new LinkMany(
+            new Model\User(),
             Repo\User::get()->getRel('posts'),
             []
         );
@@ -36,6 +37,7 @@ class AssignLinkManyTest extends AbstractTestCase
     public function testExecute()
     {
          $link = new LinkMany(
+            new Model\User(),
             Repo\User::get()->getRel('posts'),
             []
         );

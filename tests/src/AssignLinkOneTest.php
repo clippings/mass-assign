@@ -21,6 +21,7 @@ class AssignLinkOneTest extends AbstractTestCase
     public function testConstruct()
     {
         $link = new LinkOne(
+            new Model\User(),
             Repo\User::get()->getRel('address'),
             new Model\Address()
         );
@@ -36,6 +37,7 @@ class AssignLinkOneTest extends AbstractTestCase
     public function testExecute()
     {
          $link = new LinkOne(
+            new Model\User(),
             Repo\User::get()->getRel('address'),
             new Model\Address()
         );
