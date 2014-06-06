@@ -61,10 +61,10 @@ abstract class AbstractIntegrationTestCase extends AbstractTestCase
 
         $this->env->apply();
 
-        Repo\User::get()->getIdentityMap()->clear();
-        Repo\Address::get()->getIdentityMap()->clear();
-        Repo\Post::get()->getIdentityMap()->clear();
-        Repo\BlogPost::get()->getIdentityMap()->clear();
+        Repo\User::get()->clear();
+        Repo\Address::get()->clear();
+        Repo\Post::get()->clear();
+        Repo\BlogPost::get()->clear();
     }
 
     public function tearDown()

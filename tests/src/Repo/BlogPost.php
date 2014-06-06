@@ -9,18 +9,9 @@ namespace Harp\MassAssign\Test\Repo;
  */
 class BlogPost extends Post {
 
-    private static $instance;
-
-    /**
-     * @return User
-     */
-    public static function get()
+    public static function newInstance()
     {
-        if (! self::$instance) {
-            self::$instance = new BlogPost('Harp\MassAssign\Test\Model\BlogPost', TEST_DIR.'/Post.json');
-        }
-
-        return self::$instance;
+        return new BlogPost('Harp\MassAssign\Test\Model\BlogPost', TEST_DIR.'/Post.json');
     }
 
     public function initialize()

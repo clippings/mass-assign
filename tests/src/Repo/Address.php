@@ -13,18 +13,9 @@ use Harp\Validate\Assert;
  */
 class Address extends AbstractJsonRepo {
 
-    private static $instance;
-
-    /**
-     * @return User
-     */
-    public static function get()
+    public static function newInstance()
     {
-        if (! self::$instance) {
-            self::$instance = new Address('Harp\MassAssign\Test\Model\Address', TEST_DIR.'/Address.json');
-        }
-
-        return self::$instance;
+        return new Address('Harp\MassAssign\Test\Model\Address', TEST_DIR.'/Address.json');
     }
 
     public function initialize()
