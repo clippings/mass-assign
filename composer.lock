@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "74bb4a36a00974093fbe0cfb85c28a56",
+    "hash": "598fb492f85c84671ab72f47e5e329ae",
     "packages": [
         {
             "name": "harp-orm/core",
@@ -11,17 +12,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/harp-orm/core.git",
-                "reference": "b9e54f78d02057eb184f3c83095be249370e16a1"
+                "reference": "e496f585d25f24510c7db2cb09a3d7b1be4aa70c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harp-orm/core/zipball/b9e54f78d02057eb184f3c83095be249370e16a1",
-                "reference": "b9e54f78d02057eb184f3c83095be249370e16a1",
+                "url": "https://api.github.com/repos/harp-orm/core/zipball/e496f585d25f24510c7db2cb09a3d7b1be4aa70c",
+                "reference": "e496f585d25f24510c7db2cb09a3d7b1be4aa70c",
                 "shasum": ""
             },
             "require": {
+                "harp-orm/serializer": "~0.1.0",
                 "harp-orm/util": "~0.2.0",
-                "harp-orm/validate": "dev-master",
+                "harp-orm/validate": "~0.2.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -49,20 +51,55 @@
                 "source": "https://github.com/harp-orm/core/tree/master",
                 "issues": "https://github.com/harp-orm/core/issues"
             },
-            "time": "2014-06-06 11:11:40"
+            "time": "2014-06-23 07:14:50"
         },
         {
-            "name": "harp-orm/util",
-            "version": "0.2.0",
+            "name": "harp-orm/serializer",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/harp-orm/util.git",
-                "reference": "902c0d451126279fa0d5dbff7f3f99ce9e6cf9d2"
+                "url": "https://github.com/harp-orm/serializer.git",
+                "reference": "1cbef206aa54cfc79dc4051d8bdc62d15681db93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harp-orm/util/zipball/902c0d451126279fa0d5dbff7f3f99ce9e6cf9d2",
-                "reference": "902c0d451126279fa0d5dbff7f3f99ce9e6cf9d2",
+                "url": "https://api.github.com/repos/harp-orm/serializer/zipball/1cbef206aa54cfc79dc4051d8bdc62d15681db93",
+                "reference": "1cbef206aa54cfc79dc4051d8bdc62d15681db93",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Harp\\Serializer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Kerin",
+                    "email": "ikerin@gmail.com",
+                    "homepage": "http://www.openbuildings.com",
+                    "role": "Author"
+                }
+            ],
+            "description": "Serialize object properties",
+            "time": "2014-06-21 17:01:33"
+        },
+        {
+            "name": "harp-orm/util",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/harp-orm/util.git",
+                "reference": "66de94b09e584b00d1a67090e72f0e31454fab15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/harp-orm/util/zipball/66de94b09e584b00d1a67090e72f0e31454fab15",
+                "reference": "66de94b09e584b00d1a67090e72f0e31454fab15",
                 "shasum": ""
             },
             "type": "library",
@@ -84,20 +121,20 @@
                 }
             ],
             "description": "General purpose helper methods",
-            "time": "2014-05-31 11:21:41"
+            "time": "2014-06-12 07:03:18"
         },
         {
             "name": "harp-orm/validate",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/harp-orm/validate.git",
-                "reference": "4287648c926e43ec668f17a8be507b521702853b"
+                "reference": "5e110e9d195bb3ea36910c99c05a33320c8b7326"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harp-orm/validate/zipball/4287648c926e43ec668f17a8be507b521702853b",
-                "reference": "4287648c926e43ec668f17a8be507b521702853b",
+                "url": "https://api.github.com/repos/harp-orm/validate/zipball/5e110e9d195bb3ea36910c99c05a33320c8b7326",
+                "reference": "5e110e9d195bb3ea36910c99c05a33320c8b7326",
                 "shasum": ""
             },
             "type": "library",
@@ -119,45 +156,7 @@
                 }
             ],
             "description": "Object validaiton library",
-            "time": "2014-05-29 12:13:07"
-        },
-        {
-            "name": "psr/log",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for logging libraries",
-            "keywords": [
-                "log",
-                "psr",
-                "psr-3"
-            ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2014-06-21 19:53:49"
         }
     ],
     "packages-dev": [
@@ -202,17 +201,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/harp-orm/json-store.git",
-                "reference": "ba664af85b38a0c161add5ed3f9598e79b3c8e39"
+                "reference": "9ca6327fd028d619c3932fd9da0786fedcddc440"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harp-orm/json-store/zipball/ba664af85b38a0c161add5ed3f9598e79b3c8e39",
-                "reference": "ba664af85b38a0c161add5ed3f9598e79b3c8e39",
+                "url": "https://api.github.com/repos/harp-orm/json-store/zipball/9ca6327fd028d619c3932fd9da0786fedcddc440",
+                "reference": "9ca6327fd028d619c3932fd9da0786fedcddc440",
                 "shasum": ""
             },
             "require": {
                 "harp-orm/core": "dev-master",
-                "harp-orm/validate": "dev-master",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -239,18 +237,21 @@
                 "source": "https://github.com/harp-orm/json-store/tree/master",
                 "issues": "https://github.com/harp-orm/json-store/issues"
             },
-            "time": "2014-06-06 13:08:27"
+            "time": "2014-06-23 07:42:22"
         }
     ],
-    "aliases": [],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "harp-orm/core": 20,
-        "harp-orm/validate": 20,
         "harp-orm/json-store": 20
     },
     "platform": {
         "php": ">=5.4.0"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }

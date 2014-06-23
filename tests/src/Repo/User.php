@@ -25,7 +25,7 @@ class User extends AbstractJsonRepo {
                 new Rel\One('address', $this, Address::get()),
                 new Rel\Many('posts', $this, Post::get()),
             ])
-            ->setAsserts([
+            ->addAsserts([
                 new Assert\Present('name'),
             ]);
     }
